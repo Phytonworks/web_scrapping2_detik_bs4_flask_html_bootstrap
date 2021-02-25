@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    {% for gambar in gambar %}
+    <div class="container-fluid" style="margin-top:80px; text-align:center">
+    {{ gambar|safe }}
+    <a href="(image.find ('a')['href']|safe})">{{ gambar.find('a').find('img')['title']|safe }}</a>
+
+    {% endfor %}
+
+{% endblock %}

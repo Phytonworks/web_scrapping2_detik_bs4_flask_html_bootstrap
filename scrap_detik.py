@@ -15,3 +15,4 @@ for judul in judul:
 
 for gambar in gambar:
     print(gambar.find('a').find('img')['title'])
+
